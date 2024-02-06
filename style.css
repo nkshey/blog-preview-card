@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Figtree", sans-serif;
+}
+
+:root {
+   /* PRIMARY */
+   --yellow: hsl(47, 88%, 63%);
+
+   /* NEUTRAL */
+   --white: hsl(0, 0%, 100%);
+   --gray: hsl(0, 0%, 50%);
+   --black: hsl(0, 0%, 7%);
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+   background-color: var(--yellow);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+main {
+   width: 32.6rem;
+   background-color: var(--white);
+   border: 1px solid var(--black);
+   border-radius: 2rem;
+
+   padding: 2.3rem;
+   margin: 0 1.2rem;
+
+   box-shadow: 0.8rem 0.8rem var(--black);
+}
+
+.img-illustration {
+   width: 100%;
+   border-radius: 1rem;
+
+   margin-bottom: 2rem;
+}
+
+.card-type {
+   display: inline-block;
+   background-color: var(--yellow);
+   font-size: 1.2rem;
+   font-weight: 800;
+
+   padding: 0.6rem 1.2rem;
+   border-radius: 0.4rem;
+
+   margin-bottom: 1.4rem;
+}
+
+.date-text {
+   font-size: 1.2rem;
+   font-weight: 600;
+
+   margin-bottom: 1.6rem;
+}
+
+.heading {
+   display: inline-block;
+   font-size: 2rem;
+
+   margin-bottom: 1.4rem;
+}
+
+.heading:hover,
+.heading:active {
+   cursor: pointer;
+   color: var(--yellow);
+}
+
+.description {
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.5;
+   color: var(--gray);
+
+   margin-bottom: 2.4rem;
+}
+
+.author-container {
+   display: flex;
+   align-items: center;
+   gap: 1.2rem;
+}
+
+.author-container .img-author {
+   width: 3rem;
+   border-radius: 50rem;
+}
+
+.author-container p {
+   font-size: 1.4rem;
+   font-weight: 800;
+}
+
+@media (min-width: 1440px) {
+   main {
+      width: 44.2rem;
+      padding: 2.6rem;
+      box-shadow: 1rem 1rem var(--black);
+   }
+
+   .img-illustration {
+      margin-bottom: 2.4rem;
+   }
+
+   .card-type {
+      font-size: 1.7rem;
+      margin-bottom: 1.6rem;
+   }
+
+   .date-text {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+   }
+
+   .heading {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+   }
+
+   .description {
+      font-size: 1.8rem;
+      margin-bottom: 2.6rem;
+   }
+
+   .author-container {
+      gap: 1.4rem;
+   }
+
+   .author-container .img-author {
+      width: 3.8rem;
+   }
+
+   .author-container p {
+      font-size: 1.6rem;
+   }
+}
+
+@media (max-width: 310px) {
+   html {
+      font-size: 50%;
+   }
+}
